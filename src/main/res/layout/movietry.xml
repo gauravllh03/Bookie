@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="2dp"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:background="@drawable/edit"
+        android:hint="Movie Name"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_alignEnd="@+id/listView"
+        android:layout_alignRight="@+id/listView"
+        android:layout_alignTop="@+id/editText"
+        android:src="@drawable/search" />
+    </LinearLayout>
+   <LinearLayout
+       android:id="@+id/front"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/lin"
+       android:orientation="vertical"
+       android:background="@drawable/movie">
+    <ImageView
+        android:id="@+id/text_no_data_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editText"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_no_data_found"
+        android:divider="@null"
+        android:dividerHeight="0dp">
+
+    </ListView>
+    <ProgressBar
+        android:id="@+id/loading"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+   </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context="com.example.android.booklist.MainActivity">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:background="#2b1d0e"
+        android:layout_width="180dp"
+        android:layout_height="155dp">
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/booksvsmovie"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:background="@drawable/booksvsmovies" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="SEARCH THE BOOKIE"
+        android:textColor="#2b1d0e"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bookheading"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:text="Books"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#ffffff"
+            android:background="#000000"/>
+
+        <Button
+            android:id="@+id/movieheading"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Movie "
+            android:fontFamily="sans-serif-smallcaps"
+            android:background="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/booksbut"
+            android:layout_width="0dp"
+            android:layout_height="550px"
+            android:layout_weight="1"
+            android:background="@drawable/book" />
+
+        <Button
+            android:id="@+id/moviesbut"
+            android:layout_width="0dp"
+            android:layout_height="550px"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/m" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/footer"
+        android:layout_weight="0.05"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find your books and movies"/>
+</LinearLayout>

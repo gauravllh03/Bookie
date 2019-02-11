@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BookList</string>
+    <string name="settings_min_magnitude_label">No of books</string>
+    <string name="settings_min_magnitude_key" translatable="false">min_magnitude</string>
+    <string name="settings_min_magnitude_default" translatable="false">6</string>
+    <string name="action_support">EMAIL</string>
+    <string name="action_help">HELP FORUM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

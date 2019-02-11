@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.booklist">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Bookie"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:icon="@drawable/ic_action_name"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BookActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:label="Book Search">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.booklist.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".MovieActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:label="Movie Search">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.booklist.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="User Preference">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.booklist.BookActivity"/>
+        </activity>
+        <activity
+            android:name=".webview"
+            android:label="BOOKVIEW">
+        </activity>
+        <activity
+            android:name=".youtubeview"
+
+            android:screenOrientation="portrait"
+            android:label="ENJOY TRAILER">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.booklist.MovieActivity"/>
+        </activity>
+        <activity
+            android:name=".Details"
+
+            android:screenOrientation="portrait"
+            android:label="Movie Details">
+
+        </activity>
+    </application>
+
+</manifest>
